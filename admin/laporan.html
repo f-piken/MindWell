@@ -72,30 +72,6 @@
     </tbody>
   </table>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var elements = document.querySelectorAll("#menu");
-    elements.forEach(function(element) {
-                element.style.display = "none";
-            });
-    var handleCheckboxChange = function() {
-        if (checkbox.checked) {
-            elements.forEach(function(element) {
-                element.style.display = "inline";
-            });
-        } else {
-            elements.forEach(function(element) {
-                element.style.display = "none";
-            });
-        }
-    };
-
-    var checkbox = document.getElementById("btn");
-    checkbox.addEventListener("change", handleCheckboxChange);
-
-    // Panggil fungsi handleCheckboxChange saat halaman dimuat, untuk menangani situasi saat kondisi awal checkbox diisi (checked/unchecked)
-    handleCheckboxChange();
-});
 </script>
 </body>
 </html>

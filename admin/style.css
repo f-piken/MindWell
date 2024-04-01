@@ -141,8 +141,8 @@ body {
     display: inline-block;
 }
 .sidebar{
-    display: block;
-    width: 50px;
+    display: none;
+    /* width: 50px; */
 }
 #btn:checked ~ .sidebar {
     display: inline-block;
