@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logoku.png" alt="LOGO" width="150px" height="auto">
+  <img src="assets/logoku.png" alt="LOGO" width="250px" height="auto">
 </p>
 <p align="center" >
     <b><h1 style="font-size: 100px">MindWell</h1x></b>
