@@ -21,7 +21,7 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li class="log"><a href="login.html">Login</a></li>
+                    <li class="log"><a href="login.php">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,7 +30,7 @@
         <img class="hape" src="assets/Fiky Prayoga.png" alt="">
         <h2>Kesehatan Mental Anda <br>adalah Prioritas Kami</h2>
         <p>Temukan sumber daya, dukungan, <br>dan artikel untuk meningkatkan kesehatan mental Anda.</p>
-        <a href="#" class="btn">Get Started</a>
+        <button href="#" class="btn" onclick="openPopup()">Get Started</button>
     </section>
     <div class="carousel">
         <div class="carousel-content">
@@ -76,32 +76,35 @@
             </div>
         </div>
     </section>
-    <h1>Service</h1>
     <section class="servis">
-        <form id="registrationForm">
-            <h2>Form Pendaftaran</h2>
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama"><br>
-        
-            <label for="dokter">Pilihan Dokter:</label><br>
-            <select id="dokter" name="dokter">
-            <option value="dr. A">dr. Wibowo</option>
-            <option value="dr. B">dr. Anggi</option>
-            <option value="dr. C">dr. Anton</option>
-            </select><br>
-        
-            <label for="umur">Umur:</label><br>
-            <input type="text" id="umur" name="umur"><br>
-        
-            <label for="noTlp">Nomor Telepon:</label><br>
-            <input type="text" id="noTlp" name="noTlp"><br><br>
-            <input class="tombol" type="button" value="Submit" onclick="generateBill()">
-        </form>
-        <div class="hasil">
+        <div id="popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <form id="registrationForm">
+                <h2>Pendaftaran Janji</h2>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama"><br>
+            
+                <label for="dokter">Pilihan Dokter:</label><br>
+                <select id="dokter" name="dokter">
+                <option value="dr. Wibowo">dr. Wibowo</option>
+                <option value="dr. Anggi">dr. Anggi</option>
+                <option value="dr. Anton">dr. Anton</option>
+                </select><br>
+            
+                <label for="umur">Umur:</label><br>
+                <input type="text" id="umur" name="umur"><br>
+            
+                <label for="noTlp">Nomor Telepon:</label><br>
+                <input type="text" id="noTlp" name="noTlp"><br><br>
+                <input class="tombol" type="button" value="Submit" onclick="openhasil()">
+            </form>
+        </div>
+        <div class="hasil" id="hasil">
             <h2>Detail</h2>
             <div id="billOutput"></div>
+            <input class="tombol" type="button" value="Submit" onclick="closehasil()">
         </div>
-    </form>
+    <div class="overlay" id="overlay"></div>
     </section>
     <footer>
         <p>&copy; 2024 MindWell. FIKY PRAYOGA.</p>
