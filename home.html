@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MindWell - Your Mental Wellness Companion</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="assets/logo.png" alt="">
+            <h1>MindWell</h1>
+            <input type="checkbox" id="btn">
+            <label for="btn" id="menu-btn">
+                <div id="garis"></div>
+            </label>
+            <nav class="navi">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="log"><a href="login.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <img class="hape" src="assets/Fiky Prayoga.png" alt="">
+        <h2>Kesehatan Mental Anda <br>adalah Prioritas Kami</h2>
+        <p>Temukan sumber daya, dukungan, <br>dan artikel untuk meningkatkan kesehatan mental Anda.</p>
+        <button href="#" class="btn" onclick="openPopup()">Get Started</button>
+    </section>
+    <div class="carousel">
+        <div class="carousel-content">
+            <div class="carousel-item">
+                <div class="g1">
+                    <p class="gp">Sehatkan Mental Anda Demi Hidup yang Penuh Makna</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="g2">
+                    <p>Konsultasika Keluahanmu pada Kami</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="g3">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, itaque.</p>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container"></div>
+    </div>
+    <section class="features">
+        <h2>Kelebihan & Manfaat</h2>
+        <div class="feature">
+            <img class="g" src="assets/meditasi.jpg" alt="Mindfulness">
+            <div class="kalimat">
+                <h3>Mindfulness</h3>
+                <p>Latihan meditasi dan mindfulness untuk mengurangi stres dan meningkatkan konsentrasi.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class="g" src="assets/komunitas.webp" alt="Support Group">
+            <div class="kalimat">
+                <h3>Grup Dukungan</h3>
+                <p>Bergabunglah dengan komunitas yang mendukung anda untuk berbagi pengalaman.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class="g" src="assets/konsul.jpg" alt="Therapy">
+            <div class="kalimat">
+                <h3>Konseling Online</h3>
+                <p>Dapatkan bantuan dari terapis profesional melalui sesi konseling online.</p>
+            </div>
+        </div>
+    </section>
+    <section class="servis">
+        <div id="popup">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <form id="registrationForm">
+                <h2>Pendaftaran Janji</h2>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama"><br>
+            
+                <label for="dokter">Pilihan Dokter:</label><br>
+                <select id="dokter" name="dokter">
+                <option value="dr. Wibowo">dr. Wibowo</option>
+                <option value="dr. Anggi">dr. Anggi</option>
+                <option value="dr. Anton">dr. Anton</option>
+                </select><br>
+            
+                <label for="umur">Umur:</label><br>
+                <input type="text" id="umur" name="umur"><br>
+            
+                <label for="noTlp">Nomor Telepon:</label><br>
+                <input type="text" id="noTlp" name="noTlp"><br><br>
+                <input class="tombol" type="button" value="Submit" onclick="openhasil()">
+            </form>
+        </div>
+        <div class="hasil" id="hasil">
+            <h2>Detail</h2>
+            <div id="billOutput"></div>
+            <input class="tombol" type="button" value="Submit" onclick="closehasil()">
+        </div>
+    <div class="overlay" id="overlay"></div>
+    </section>
+    <footer>
+        <p>&copy; 2024 MindWell. FIKY PRAYOGA.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
