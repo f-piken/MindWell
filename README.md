@@ -1,1 +1,2 @@
-"# MindWell" 
+![Logo](assets/logo.png)
+**MindWell**
