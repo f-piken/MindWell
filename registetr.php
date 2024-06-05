@@ -15,17 +15,17 @@
             </div>
         </a>
         <h2>Register</h2>
-        <form class="form" action="login.php" method="get">
+        <form class="form" action="auth.php" method="post">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
             <div class="form-group">
                 <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-                <input type="password" id="newpassword" name="newpassword" placeholder="New Password" required>
+                <input type="password" id="password" name="password" placeholder="Enter New Password" required>
             </div>
-            <div class="form-group">
-                <input type="password" id="repassword" name="repassword" placeholder="Re-enter New Password" required>
-            </div>
-            <button type="submit" class="btn">Register</button>
+            <button type="submit" class="btn" name="register">Register</button>
             <p>Sudah punya Akun? <a href="login.php">Login</a></p>
         </form>
     </div>
